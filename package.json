@@ -1,0 +1,29 @@
+{
+  "name": "devdesk-frontend",
+  "version": "1.0.0",
+  "description": "My take on devdesk frontend",
+  "main": "index.tsx",
+  "author": "Mashima Button",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.9.0",
+    "@material-ui/icons": "^4.5.1",
+    "@types/node": "^13.7.1",
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
+    "@types/react-router-dom": "^5.1.3",
+    "axios": "^0.19.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.3.1",
+    "typescript": "^3.7.5"
+  }
+}
