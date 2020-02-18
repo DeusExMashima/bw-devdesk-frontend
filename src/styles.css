@@ -1,0 +1,15 @@
+.auth {
+    max-height: 100vh;
+}
+
+.formDisplay {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    padding: 10px;
+    margin: 0 auto;
+    
+}
+

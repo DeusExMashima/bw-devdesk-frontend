@@ -1,16 +1,11 @@
 import React from 'react';
-import { AppBar, Toolbar } from '@material-ui/core';
 
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <>
-    <div>
-        <AppBar>
-            <Toolbar>
-            </Toolbar>
-        </AppBar>
-    </div>
+      <div>
+      </div>
     </>
   );
 }

@@ -1,9 +1,10 @@
 import React from 'react';
-import { AppBar } from '@material-ui/core'
+import { AppBar, Toolbar } from '@material-ui/core'
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <div>
+      <AppBar><Toolbar>DevDesk Queue</Toolbar></AppBar>
     </div>
   );
 }
