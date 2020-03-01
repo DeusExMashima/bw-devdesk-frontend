@@ -1,0 +1,3 @@
+export const CLAIM_TICKET_START: string = "CLAIM_TICKET_START"
+export const CLAIM_TICKET_SUCCESS: string = "CLAIM_TICKET_SUCCESS"
+export const CLAIM_TICKET_FAIL: string = "CLAIM_TICKET_FAIL"

@@ -1,0 +1,3 @@
+export const DELETE_TICKET_START: string = "DELETE_TICKET_START"
+export const DELETE_TICKET_SUCCESS: string = "DELETE_TICKET_SUCCESS"
+export const DELETE_TICKET_FAIL: string = "DELETE_TICKET_FAIL"

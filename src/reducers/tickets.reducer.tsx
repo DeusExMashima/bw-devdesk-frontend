@@ -2,7 +2,7 @@ import {
     GET_TICKETS_START, 
     GET_TICKETS_SUCCESS, 
     GET_TICKETS_FAIL 
-} from "../actions/tickets.action"
+} from "../actions"
 
 import { ticketListState } from '../states'
 

@@ -3,19 +3,19 @@ import {
     CREATE_TICKET_SUCCESS, 
     CREATE_TICKET_FAIL,
 
-    EDIT_TICKET_START, 
-    EDIT_TICKET_SUCCESS, 
-    EDIT_TICKET_FAIL,
+    GET_TICKET_START,
+    GET_TICKETS_SUCCESS,
+    GET_TICKETS_FAIL,
 
-    CLAIM_TICKET_START, 
-    CLAIM_TICKET_SUCCESS, 
+    CLAIM_TICKET_START,
+    CLAIM_TICKET_SUCCESS,
     CLAIM_TICKET_FAIL,
 
-    DELETE_TICKET_START, 
-    DELETE_TICKET_SUCCESS, 
+    DELETE_TICKET_START,
+    DELETE_TICKET_SUCCESS,
     DELETE_TICKET_FAIL
 
-} from '../actions/singleTicket.action'
+} from '../actions'
 
 import { singleTicketState } from '../states'
 

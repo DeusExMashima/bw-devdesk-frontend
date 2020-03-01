@@ -1,0 +1,5 @@
+export const CREATE_TICKET_START: string = "CREATE_TICKET_START"
+export const CREATE_TICKET_SUCCESS: string = "CREATE_TICKET_SUCCESS"
+export const CREATE_TICKET_FAIL: string = "CREATE_TICKET_FAIL"
+
+
