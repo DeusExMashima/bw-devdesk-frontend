@@ -1,6 +1,6 @@
 type Solutions = {
-    solutionId: number;
+    solutionId: number | null;
     body: string;
-    answerer: number;
+    answerer: string;
     createdAt: string;
 }

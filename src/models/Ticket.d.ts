@@ -1,5 +1,5 @@
-type Ticket = {
-    id: number;
+type SingleTicket = {
+    id: number | null;
     title: string;
     status: string;
     description: string;
@@ -9,4 +9,8 @@ type Ticket = {
     category: string;
     createdAt: string;
     solution: Solutions;
+}
+
+type Tickets = {
+    tickets: []
 }
