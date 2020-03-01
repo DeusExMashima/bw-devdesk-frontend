@@ -4,11 +4,9 @@ import {
     GET_TICKETS_FAIL 
 } from "../actions/tickets.action"
 
-export const initialState:Tickets = {
-    tickets: []
-}
+import { ticketListState } from '../states'
 
-export const ticketsReducer = (state: Object = initialState, action: any) => {
+export const ticketsReducer = (state: Object = ticketListState, action: any) => {
     switch(action.type){
         default:
             return state
