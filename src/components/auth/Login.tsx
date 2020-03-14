@@ -1,10 +1,27 @@
-import React from 'react';
+import React from 'react'
+
+import { useDispatch } from 'react-redux'
+import { useForm } from 'react-hook-form'
+
+import { postLogin } from '../../actions'
+
 import { TextField, Button } from '@material-ui/core'
 
-const Login: React.FC = () => {
+
+
+export const Login: React.FC = () => {
+
+  const { register, setValue, handleSubmit, errors } = useForm<LoginInfo>();
+  
+  const dispatch = useDispatch()
+
+  const onSubmit = (values:LoginInfo) => {
+    dispatch(postLogin(values))
+  }
+
   return (
     <div className="auth">
-      <form className="formDisplay">
+      <form className="formDisplay" onSubmit={handleSubmit(onSubmit)}>
         <TextField 
           required
           autoFocus
@@ -12,6 +29,7 @@ const Login: React.FC = () => {
           variant="outlined"
           name="email"
           label="Email"
+          inputRef={register}
           />
         <TextField 
           required
@@ -21,11 +39,10 @@ const Login: React.FC = () => {
           name="password"
           type="password"
           label="Password"
+          inputRef={register}
           />
         <Button style={{margin: "10px", padding: "10px"}} className="formInside" type="submit" variant="contained" color="primary">Login</Button>
         </form>
     </div>
   );
 }
-
-export default Login;

@@ -3,17 +3,13 @@ import { TextField, Button } from '@material-ui/core'
 import { useForm } from 'react-hook-form'
 
 
-interface RegisterValue {
-  newUser: UserInfo
-}
-
-const Register: React.FC = () => {
+export const Register: React.FC = () => {
 
 
-  const { register, errors, handleSubmit } = useForm<RegisterValue>()
+  const { register, errors, handleSubmit } = useForm<UserInfo>()
 
-  const onSubmit = handleSubmit(({ newUser }) => {
-    console.log(newUser)
+  const onSubmit = handleSubmit(({ name, email, password, role }) => {
+    console.log(name, email, password, role)
   })
 
   return (
@@ -23,21 +19,21 @@ const Register: React.FC = () => {
         name="name"
         style={{margin: "10px"}}
         inputRef={ register({ required: true }) } />
-        { errors.newUser && "Name is Required" }
+        {/* { errors.name && "Name is Required" } */}
 
         <TextField 
         name="email"
         className="formInside"
         style={{margin: "10px"}}
         inputRef={ register({ required: true }) } />
-        { errors.newUser && "Email is Required" }
+        {/* { errors.email && "Email is Required" } */}
 
         <TextField 
         name="password"
         style={{margin: "10px"}}
         className="formInside"
         inputRef={ register({ required: true }) } />
-        { errors.newUser && "Password is Required" }
+        {/* { errors.password && "Password is Required" } */}
 
         <Button style={{margin: "10px"}} type="submit"> Register </Button>
 
@@ -45,5 +41,3 @@ const Register: React.FC = () => {
     </div>
   );
 }
-
-export default Register;

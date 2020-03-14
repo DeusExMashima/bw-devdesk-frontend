@@ -3,9 +3,9 @@ import { Route, Switch } from 'react-router-dom'
 
 import './styles.css'
 
-import Home from "./components/pages/Home"
-import Register from './components/auth/Register';
-import Login from './components/auth/Login';
+import { Home } from "./components"
+import { Register } from './components';
+import { Login } from './components';
 
 const App: React.FC = () => {
   return (

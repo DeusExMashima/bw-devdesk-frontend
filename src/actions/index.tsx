@@ -1,12 +1,12 @@
-export * from './login.action'
-export * from './register.action'
+export * from './login/login.action'
+export * from './auth/register.action'
 
-export * from './tickets.action'
+export * from './tickets/tickets.action'
 
-export * from './getTicket.action'
-export * from './createTicket.action'
-export * from './claimTicket.action'
-export * from './deleteTicket.action'
+export * from './tickets/getTicket.action'
+export * from './tickets/createTicket.action'
+export * from './tickets/claimTicket.action'
+export * from './tickets/deleteTicket.action'
 
 
-export * from './user.action'
+export * from './users/user.action'

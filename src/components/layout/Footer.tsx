@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Footer: React.FC = () => {
+export const Footer: React.FC = () => {
   return (
     <>
       <div>
@@ -9,5 +9,3 @@ const Footer: React.FC = () => {
     </>
   );
 }
-
-export default Footer;

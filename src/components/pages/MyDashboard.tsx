@@ -1,11 +1,9 @@
 import React from 'react'
 
-const MyDashboard: React.FC = () => {
+export const MyDashboard: React.FC = () => {
     return (
         <div>
             
         </div>
     )
 }
-
-export default MyDashboard
